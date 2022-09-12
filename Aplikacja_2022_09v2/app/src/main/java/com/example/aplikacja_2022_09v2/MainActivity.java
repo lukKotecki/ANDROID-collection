@@ -1,5 +1,6 @@
 package com.example.aplikacja_2022_09v2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -73,14 +74,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void click(View view) {
 
+        Intent intent;
+
         switch(view.getId())
         {
             case R.id.lewy:
-
+                intent = new Intent(MainActivity.this, LewyActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.prawy:
-
+                intent = new Intent(MainActivity.this, PrawyActivity.class);
+                startActivity(intent);
                 break;
 
         }
