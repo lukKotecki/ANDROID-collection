@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Wiher/android_studio_projekty/Aplikacja_2022_09v2/app/src/main/res/layout/activity_display_message.xml" value="0.14130434782608695" />
         <entry key="..\:/Wiher/android_studio_projekty/Aplikacja_2022_09v2/app/src/main/res/layout/activity_lewy.xml" value="0.14130434782608695" />
+        <entry key="..\:/Wiher/android_studio_projekty/Aplikacja_2022_09v2/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Wiher/android_studio_projekty/Aplikacja_2022_09v2/app/src/main/res/layout/activity_prawy.xml" value="0.2" />
         <entry key="..\:/Wiher/android_studio_projekty/Aplikacja_2022_09v2/app/src/main/res/layout/fragment_first.xml" value="0.1408514492753623" />
       </map>
