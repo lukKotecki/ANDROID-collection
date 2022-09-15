@@ -87,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, PrawyActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.taskOneButton:
+                intent = new Intent(this, TaskOneActivity.class);
+                startActivity(intent);
+                break;
 
         }
 

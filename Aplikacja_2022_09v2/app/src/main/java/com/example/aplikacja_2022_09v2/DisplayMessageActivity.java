@@ -3,6 +3,7 @@ package com.example.aplikacja_2022_09v2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
@@ -19,6 +20,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         textView.setText(message);
 
+    }
+
+    public void returnFunction(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 

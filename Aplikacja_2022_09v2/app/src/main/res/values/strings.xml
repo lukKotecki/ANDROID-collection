@@ -12,6 +12,12 @@
 
     <string name="prawy_text_box">Podaj wiadomość</string>
     <string name="prawy_button">Kliknij</string>
+    <string name="return_button">Główna</string>
+    <string name="taskOneButton">Zadanie 1</string>
+    <string name="editTextName">Imię</string>
+    <string name="editTextSurname">Nazwisko</string>
+    <string name="editTextMail">email</string>
+    <string name="sendButton">Wyślij</string>
 
 
 </resources>
