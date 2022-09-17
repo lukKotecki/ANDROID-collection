@@ -18,6 +18,9 @@
     <string name="editTextSurname">Nazwisko</string>
     <string name="editTextMail">email</string>
     <string name="sendButton">Wyślij</string>
+    <string name="taskTwoButton">Zadanie 2</string>
+    <string name="welcomeText">Podaj swoje imię:</string>
+    <string name="hintName">Podaj imię</string>
 
 
 </resources>
