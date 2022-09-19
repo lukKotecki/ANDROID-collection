@@ -10,7 +10,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class TaskTwoActivity extends AppCompatActivity {
+
+    int randomNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +47,53 @@ public class TaskTwoActivity extends AppCompatActivity {
         klawiszNie.setOnClickListener(this::notStartGame);
 
 
-
-    }
-
-
-
-    public void startGame(View view){
-        TextView welcomeMessage = findViewById(R.id.welcomeText);
-        welcomeMessage.setText("Wybrałeś opcję TAK");
     }
 
     public void notStartGame(View view){
         TextView welcom = findViewById(R.id.welcomeText);
         welcom.setText("Szkoda że wybrałeś opcję NIE");
     }
+
+
+
+
+    public void startGame(View view){
+        TextView welcomeMessage = findViewById(R.id.welcomeText);
+        welcomeMessage.setText("Wybrałeś opcję TAK");
+
+        randomNumber = new Random().nextInt(5);
+
+        TextView textView = findViewById(R.id.welcomeText);
+        textView.setText("Podaj liczbę w przedziale 1 - 10 "+randomNumber);
+
+
+
+
+
+    }
+
+
+    public void sprawdzLiczbe(View view){
+        EditText podanaLiczba = findViewById(R.id.editTextNumber);
+        TextView text = findViewById(R.id.welcomeText);
+
+        int liczba =2;
+        try {
+            liczba = Integer.parseInt(podanaLiczba.toString());
+        }catch (NumberFormatException e){
+            text.setText("To nie liczba "+e.getMessage());
+
+        }
+
+
+        if (liczba == randomNumber){
+            //text.setText(liczba+" Brawo! zgadłeś "+randomNumber);
+        }else{
+            //text.setText(liczba+" Pudło "+randomNumber);
+        }
+
+    }
+
 
 }
 
