@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(this, TaskTwoActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.taskThreeButton:
+                intent = new Intent(this, TaskThreeActivity.class);
+                startActivity(intent);
+                break;
 
         }
 

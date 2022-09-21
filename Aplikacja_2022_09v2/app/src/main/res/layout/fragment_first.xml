@@ -68,4 +68,14 @@
         android:text="@string/taskTwoButton"
         app:layout_constraintBaseline_toBaselineOf="@+id/taskOneButton"
         app:layout_constraintStart_toEndOf="@+id/taskOneButton" />
+
+    <Button
+        android:id="@+id/taskThreeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="click"
+        android:text="Zadanie 3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/taskTwoButton"
+        app:layout_constraintStart_toEndOf="@+id/taskTwoButton" />
 </android.support.constraint.ConstraintLayout>
