@@ -78,4 +78,15 @@
         android:text="Zadanie 3"
         app:layout_constraintBaseline_toBaselineOf="@+id/taskTwoButton"
         app:layout_constraintStart_toEndOf="@+id/taskTwoButton" />
+
+    <Button
+        android:id="@+id/taskFourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="click"
+        android:text="Zadanie 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskOneButton" />
 </android.support.constraint.ConstraintLayout>

@@ -15,6 +15,7 @@ import com.example.aplikacja_2022_09v2.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -98,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.taskThreeButton:
                 intent = new Intent(this, TaskThreeActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.taskFourButton:
+                intent = new Intent(this,TaskFourActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                Toast.makeText(this, "Brak intencji :/", Toast.LENGTH_SHORT).show();
                 break;
 
         }
