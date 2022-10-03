@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mainButton;
     private TextView mainText;
+    private CheckBox checkboxHarry, checkboxMatrix, checkboxJoker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mainButton = findViewById(R.id.mainButton);
         mainText = findViewById(R.id.mainText);
+        checkboxHarry = findViewById(R.id.checkboxHarry);
+        checkboxMatrix = findViewById(R.id.checkboxMatrix);
+        checkboxJoker = findViewById(R.id.checkboxJoker);
 
         mainButton.setOnClickListener(this);
         mainButton.setOnLongClickListener(new View.OnLongClickListener() {
@@ -35,13 +41,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mainButton.setOnHoverListener(new View.OnHoverListener() {
             @Override
             public boolean onHover(View view, MotionEvent motionEvent) {
-
                 mainText.setText("BubaBuba");
-
-
                 return false;
             }
         });
+
+        checkboxHarry.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b)
+                    Toast.makeText(MainActivity.this, "Spoko że oglądałeś", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "powinieneś obejrzeć", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
 
 
 
@@ -55,13 +71,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.mainButton:
                 Toast.makeText(this, "Kliknięto krótko", Toast.LENGTH_SHORT).show();
                 break;
-
             default:
                 break;
-
-
         }
     }
+
+
+
+
 
 
 }
