@@ -3,11 +3,14 @@ package com.example.aplikacja_2022_10;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ProgressBar;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mainButton;
     private TextView mainText;
     private CheckBox checkboxHarry, checkboxMatrix, checkboxJoker;
+    private RadioGroup rgMaritalStatus;
+    private ProgressBar pbProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,59 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkboxHarry = findViewById(R.id.checkboxHarry);
         checkboxMatrix = findViewById(R.id.checkboxMatrix);
         checkboxJoker = findViewById(R.id.checkboxJoker);
+        rgMaritalStatus = findViewById(R.id.rgMaritalStatus);
+        pbProgress = findViewById(R.id.pbProgress);
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i =0;i<16;i++){
+                    pbProgress.incrementProgressBy(10);
+                    SystemClock.sleep(700);
+                }
+            }
+        });
+        thread.start();
+
+
+
+        int checkButton = rgMaritalStatus.getCheckedRadioButtonId();
+        switch (checkButton){
+            case R.id.rbMarried:
+                Toast.makeText(MainActivity.this, "You are married", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rbSingle:
+                Toast.makeText(MainActivity.this, "U r single", Toast.LENGTH_SHORT).show();
+               // pbProgress.setVisibility(View.VISIBLE);
+                break;
+            case R.id.rbInRel:
+                Toast.makeText(MainActivity.this, "U are in relatioshipment", Toast.LENGTH_SHORT).show();
+                // pbProgress.setVisibility(View.GONE);
+                break;
+            default:
+                break;
+        }
+
+        rgMaritalStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch(i) {
+                    case R.id.rbMarried:
+                        Toast.makeText(MainActivity.this, "You are married", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.rbSingle:
+                        Toast.makeText(MainActivity.this, "U r single", Toast.LENGTH_SHORT).show();
+                        //pbProgress.setVisibility(View.VISIBLE);
+                        break;
+                    case R.id.rbInRel:
+                        Toast.makeText(MainActivity.this, "U are in relatioshipment", Toast.LENGTH_SHORT).show();
+                      //  pbProgress.setVisibility(View.GONE);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
 
         mainButton.setOnClickListener(this);
         mainButton.setOnLongClickListener(new View.OnLongClickListener() {

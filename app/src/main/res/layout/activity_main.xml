@@ -14,14 +14,14 @@
         android:text="NAPIS !"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:id="@+id/mainText"
-        />
+        android:id="@+id/mainText" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:layout_below="@+id/mainText"
+        android:id="@+id/rellayoutCheckbox"
         >
         <CheckBox
             android:layout_width="wrap_content"
@@ -50,11 +50,40 @@
 
     </RelativeLayout>
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellayoutCheckbox"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rgMaritalStatus"
+        android:orientation="horizontal">
 
-
-
-
-
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Married"
+            android:id="@+id/rbMarried"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:checked="true"
+            android:id="@+id/rbSingle"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Relationship"
+            android:id="@+id/rbInRel"/>
+    </RadioGroup>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbProgress"
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_margin="20dp"
+        android:max="120"/>
 
 
 
