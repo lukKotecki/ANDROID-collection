@@ -2,6 +2,7 @@ package com.example.aplikacja_2022_10;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.MotionEvent;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CheckBox checkboxHarry, checkboxMatrix, checkboxJoker;
     private RadioGroup rgMaritalStatus;
     private ProgressBar pbProgress;
+    private Intent intent;
+    private Button btLeft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkboxJoker = findViewById(R.id.checkboxJoker);
         rgMaritalStatus = findViewById(R.id.rgMaritalStatus);
         pbProgress = findViewById(R.id.pbProgress);
+        btLeft = findViewById(R.id.btLeft);
+
+        btLeft.setOnClickListener(this);
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -129,6 +135,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.mainButton:
                 Toast.makeText(this, "Kliknięto krótko", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.btLeft:
+                intent = new Intent(this,LeftActivity.class);
+                startActivity(intent);
             default:
                 break;
         }

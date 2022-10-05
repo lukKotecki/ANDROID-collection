@@ -86,8 +86,13 @@
         android:max="120"/>
 
 
-
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEWY"
+        android:layout_below="@+id/pbProgress"
+        android:layout_margin="20dp"
+        android:id="@+id/btLeft"/>
 
 
     <Button
