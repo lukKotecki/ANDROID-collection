@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeftActivity">
+    tools:context=".LeftActivity"
+    android:orientation="horizontal">
 
 
     <TextView
@@ -14,7 +15,10 @@
         android:id="@+id/leftTextView"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:background="#f11111"
+        android:layout_weight="20"
+        android:padding="10dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -23,6 +27,8 @@
         android:id="@+id/leftButtonSend"
         android:layout_below="@id/leftTextView"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:layout_weight="80"
+        android:background="#11ff11" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ProgressBar pbProgress;
     private Intent intent;
     private Button btLeft;
+    private Button btRight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rgMaritalStatus = findViewById(R.id.rgMaritalStatus);
         pbProgress = findViewById(R.id.pbProgress);
         btLeft = findViewById(R.id.btLeft);
+        btRight = findViewById(R.id.btRight);
 
         btLeft.setOnClickListener(this);
+        btRight.setOnClickListener(this);
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -138,6 +141,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btLeft:
                 intent = new Intent(this,LeftActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btRight:
+                intent = new Intent(this, RightActivity.class);
+                startActivity(intent);
+                break;
             default:
                 break;
         }
