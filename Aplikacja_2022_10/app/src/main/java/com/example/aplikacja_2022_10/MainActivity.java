@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Intent intent;
     private Button btLeft;
     private Button btRight;
+    private Button btSrodek;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         pbProgress = findViewById(R.id.pbProgress);
         btLeft = findViewById(R.id.btLeft);
         btRight = findViewById(R.id.btRight);
+        btSrodek =findViewById(R.id.btSrodek);
 
         btLeft.setOnClickListener(this);
         btRight.setOnClickListener(this);
+        btSrodek.setOnClickListener(this);
+
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -144,6 +148,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btRight:
                 intent = new Intent(this, RightActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btSrodek:
+                intent = new Intent(this, SrodekActivity.class);
                 startActivity(intent);
                 break;
             default:
