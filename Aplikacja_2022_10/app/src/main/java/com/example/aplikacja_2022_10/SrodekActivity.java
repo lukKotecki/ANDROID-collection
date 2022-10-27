@@ -25,19 +25,19 @@ public class SrodekActivity extends AppCompatActivity {
         citiesList = findViewById(R.id.citiesList);
         studentsSpinner = findViewById(R.id.studentsSpinner);
 
-        ArrayList<String> students = new ArrayList<>();
-        students.add("Mirko");
-        students.add("Wrirko");
-        students.add("Kirko");
-        students.add("Dirko");
-        students.add("Zirko");
-        ArrayAdapter<String> studentsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,students);
-        studentsSpinner.setAdapter(studentsAdapter);
+//        ArrayList<String> students = new ArrayList<>();
+//        students.add("Mirko");
+//        students.add("Wrirko");
+//        students.add("Kirko");
+//        students.add("Dirko");
+//        students.add("Zirko");
+//        ArrayAdapter<String> studentsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,students);
+//        studentsSpinner.setAdapter(studentsAdapter);
 
         studentsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(SrodekActivity.this, "You selected: "+students.get(i), Toast.LENGTH_SHORT).show();
+                Toast.makeText(SrodekActivity.this, "You selected: "+studentsSpinner.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
             }
 
             @Override

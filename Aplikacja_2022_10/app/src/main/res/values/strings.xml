@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Aplikacja_2022_10</string>
+    <string-array name="students">
+        <item>Luki</item>
+        <item>Kuki</item>
+        <item>Puki</item>
+        <item>Duki</item>
+        <item>Huki</item>
+        <item>Zuki</item>
+    </string-array>
+
 </resources>
