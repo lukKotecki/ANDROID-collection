@@ -19,6 +19,8 @@ public class LeftActivity extends AppCompatActivity implements View.OnClickListe
 
         leftButton = findViewById(R.id.leftButtonSend);
         leftButton.setOnClickListener(this);
+
+        leftButton.setText(getString(R.string.leftButtonText));
     }
 
     @Override

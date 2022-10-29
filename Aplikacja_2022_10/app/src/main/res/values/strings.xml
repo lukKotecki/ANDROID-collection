@@ -9,4 +9,6 @@
         <item>Zuki</item>
     </string-array>
 
+    <string name="leftButtonText">Inny napis</string>
+
 </resources>
