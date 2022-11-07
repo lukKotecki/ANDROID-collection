@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LeftActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
 
     <TextView
@@ -27,13 +27,8 @@
         android:text="Przycisk"
         android:id="@+id/leftButtonSend"
         android:layout_below="@id/leftTextView"
-        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:layout_weight="80"
         android:background="#11ff11" />
-
-    <include
-        layout="@layout/trademark"
-        />
 
 </LinearLayout>
