@@ -19,6 +19,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mainButton;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btLeft;
     private Button btRight;
     private Button btSrodek;
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btLeft = findViewById(R.id.btLeft);
         btRight = findViewById(R.id.btRight);
         btSrodek =findViewById(R.id.btSrodek);
+        fab = findViewById(R.id.fab);
 
         btLeft.setOnClickListener(this);
         btRight.setOnClickListener(this);
@@ -157,6 +161,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btSrodek:
                 intent = new Intent(this, SrodekActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.fab:
+                Toast.makeText(this, "Kliknięto floating action button", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
