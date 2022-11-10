@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btLeft.setOnClickListener(this);
         btRight.setOnClickListener(this);
         btSrodek.setOnClickListener(this);
-
+        fab.setOnClickListener(this);
 
         Thread thread = new Thread(new Runnable() {
             @Override
