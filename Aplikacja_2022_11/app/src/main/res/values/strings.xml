@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aplikacja_2022_11</string>
+    <string name="textButtonHistory">Historia saksofonu</string>
+    <string name="textButtonBuild">Budowa saksofonu</string>
+    <string name="textSaxophoneBanner">Saksofon od A do Z</string>
+</resources>
