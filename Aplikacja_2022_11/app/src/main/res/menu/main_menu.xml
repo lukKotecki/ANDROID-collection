@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="about_menu"
+        android:id="@+id/about_menu"
+        android:icon="@drawable/ic_info_icon"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:title="main_menu"
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/ic_main_menu"
+        app:showAsAction="always"/>
+
 </menu>

@@ -5,16 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorBackground">
+    >
 
 
+
+    <include layout="@layout/banner_saxophone"
+        android:id="@+id/bennerSaxophone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textViewBanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="80dp"
         android:text="@string/textSaxophoneBanner"
         android:textSize="20sp"
         android:textStyle="bold"/>
