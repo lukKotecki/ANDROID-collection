@@ -32,27 +32,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonHistory = findViewById(R.id.buttonHistory);
         buttonBuild = findViewById(R.id.buttonBuild);
-        citiesList = findViewById(R.id.citiesList);
-
         buttonHistory.setOnClickListener(this);
         buttonBuild.setOnClickListener(this);
 
 
-        ArrayList<String> cities = new ArrayList<>();
-
-        cities.add("Kocław");
-        cities.add("Bocław");
-        cities.add("Zrocław");
-        cities.add("Wroclaw");
-
-        ArrayAdapter<String> citiesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, cities);
-        citiesList.setAdapter(citiesAdapter);
-        citiesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, "Klikinięto "+cities.get(i), Toast.LENGTH_SHORT).show();
-            }
-        });
+//        citiesList = findViewById(R.id.citiesList);
+//
+//        ArrayList<String> cities = new ArrayList<>();
+//
+//        cities.add("Kocław");
+//        cities.add("Bocław");
+//        cities.add("Zrocław");
+//        cities.add("Wroclaw");
+//
+//        ArrayAdapter<String> citiesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, cities);
+//        citiesList.setAdapter(citiesAdapter);
+//        citiesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Toast.makeText(MainActivity.this, "Klikinięto "+cities.get(i), Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
     }
 
@@ -60,12 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.buttonHistory:
-                Toast.makeText(this, "Kliknięto Historie", Toast.LENGTH_SHORT).show();
                 intent = new Intent(this,HistoryActivity.class);
                 startActivity(intent);
                 break;
             case R.id.buttonBuild:
-                Toast.makeText(this, "Kliknięto Budowę", Toast.LENGTH_SHORT).show();
                 intent = new Intent(this,BuildActivity.class);
                 startActivity(intent);
                 break;
@@ -83,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
         switch(item.getItemId()){
             case R.id.settings_menu:
                 Toast.makeText(this, "settings selected", Toast.LENGTH_SHORT).show();
@@ -90,9 +89,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.about_menu:
                 Toast.makeText(this, "about clicked", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.home_menu:
+                intent = new Intent(this,MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.finish_menu:
+                finish();
+                break;
             default:
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

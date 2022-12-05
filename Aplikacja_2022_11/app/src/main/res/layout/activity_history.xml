@@ -59,33 +59,33 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saksofon altowy"
+                android:text="Ofiklejda"
                 android:layout_margin="20dp"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/alt"/>
+                android:src="@drawable/ophicleide_in_b_flat_and_c"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saksofon tenorowy"
+                android:text="Serpent"
                 android:layout_margin="20dp"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/tenor"/>
+                android:src="@drawable/serpent"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saksofon barytonowy"
+                android:text="Muzeum Selmera"
                 android:layout_margin="20dp"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/baryton"
+                android:src="@drawable/selmer_museum"
                 android:layout_marginBottom="100dp"/>
         </LinearLayout>
     </ScrollView>
