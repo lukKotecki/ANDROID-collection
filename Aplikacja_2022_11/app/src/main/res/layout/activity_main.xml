@@ -43,25 +43,25 @@
         android:layout_marginTop="10dp"
         android:text="@string/textButtonBuild"/>
 
-    <ListView
-        android:id="@+id/citiesList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="1000dp" />
-
     <Button
-        android:id="@+id/buttonToSecondLayout"
+        android:id="@+id/buttonDiaphragm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonBuild"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="toSecondLayout"
-        android:text="to secon layout" />
+        android:layout_below="@id/buttonBuild"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/textButtonDiaphragm"/>
+
+    <Button
+        android:id="@+id/buttonEmbouchure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDiaphragm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/textButtonEmbouchure"/>
+
+
 
 
 </RelativeLayout>

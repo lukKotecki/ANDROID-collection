@@ -32,26 +32,8 @@ public class HistoryActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        // TODO: 05.12.2022
-
-        switch(item.getItemId()){
-            case R.id.settings_menu:
-                Toast.makeText(this, "settings selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.about_menu:
-                Toast.makeText(this, "about clicked", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.home_menu:
-                intent = new Intent(this,MainActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.finish_menu:
-                finish();
-                break;
-            default:
-                break;
-        }
-
+        MenuPopulateClass menuPopulate = new MenuPopulateClass();
+        menuPopulate.menuPopulate(item,this);
 
         return super.onOptionsItemSelected(item);
     }

@@ -18,24 +18,27 @@ public class MenuPopulateClass extends AppCompatActivity {
 
     public boolean menuPopulate(MenuItem item, Context context){
         switch(item.getItemId()){
+
+            //TODO górny pasek mennu nie działa prawidłowo
             case R.id.settings_menu:
-                Toast.makeText(context , "kliknięto settings menu funkcja do roboty", Toast.LENGTH_SHORT).show();
-                intent = new Intent(context, BuildActivity.class);
+                Toast.makeText(context , "kliknięto Trybiki TODO", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.about_menu:
-                Toast.makeText(context , "kliknięto about menu funkcja do roboty", Toast.LENGTH_SHORT).show();
-                intent = new Intent(context, HistoryActivity.class);
-                break;
+                Toast.makeText(context , "kliknięto about TODO", Toast.LENGTH_SHORT).show();
+               break;
             case R.id.home_menu:
+                Toast.makeText(context , "kliknięto domek wejscie do ekranu glownego", Toast.LENGTH_SHORT).show();
                 intent = new Intent(context, MainActivity.class);
+                context.startActivity(intent);
                 break;
             case R.id.finish_menu:
+                Toast.makeText(context , "kliknięto finish to nie dziala TODO", Toast.LENGTH_SHORT).show();
                 finish();
-                return false;
+                return true;
             default:
                 break;
         }
-        startActivity(intent);
+
         return true;
     }
 

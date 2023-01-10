@@ -6,5 +6,12 @@
     <string name="build_activity_title">Budowa saksofonu</string>
     <string name="saxophone_build_text">Saksofon składa się z metalowej rury w kształcie fajki (w przypadku saksofonu sopranowego - prostej), wyposażony jest w klapy i pojedynczy stroik, jak w klarnecie. Obecnie buduje się saksofony w 7 wielkościach: kontrabasowy, basowy, barytonowy, tenorowy, altowy i dwa sopranowe.</string>
     <string name="history_activity_title">Historia saksofonu</string>
-    <string name="history_saxophone_text">Saksofon został zbudowany w 1840 roku przez belgijskiego konstruktora Adolfa Saxa i opatentowany w roku 1846. Instrument ten zyskał wkrótce wielką popularność w Francji, a potem w Ameryce Północnej.</string>
+    <string name="history_saxophone_text">Saksofon należy do grupy instrumentów dętych drewnianych, został on skonstruowany przez Adolpha Saxa  prawdopodobnie w 1842 roku i nazwany jest na cześć swojego konstruktora. Pierwszy publiczny koncert z użyciem saksofonu odbył się w lutym 1844 roku pod kierownictwem francuskiego kompozytora Louisa Hector Berlioza.</string>
+    <string name="textButtonEmbouchure">Zadęcie saksofonowe</string>
+    <string name="textButtonDiaphragm">Oddech przeponowo-żebrowy</string>
+    <string name="diaphragm_activity_title">Oddech przeponowo-żebrowy</string>
+    <string name="diaphragm_text"><![CDATA[Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.]]></string>
+    <string name="history_ophicleyde_text">Instrument który bezpośrednio poprzedzał powstanie saksofonu to ofiklejda. Jest to instrument dęty blaszany,  mierząca około metra wysokości z ustnikiem podobnym do tego, jaki ma puzon.</string>
+    <string name="history_patent_text">Adolf Sax, złożył wniosek o patent na saksofon we Francji 21 marca 1846 roku. W swoim wniosku wspomniał, że ma być to instrument o brzmieniu podobnym do instrumentów smyczkowych, ale o większej sile i intensywności dźwięku. Patent zawierał rysunki ośmiu różnych saksofonów z których można wyróżnić trzy główne modele w kształcie ofiklejdy, zagiętym -znanym obecnie oraz w formie wyprostowanej. Ustnik saksofonu miał pojedynczy stroik i  przypominał ustnik klarnetowy.</string>
+    <string name="history_jazz_text">Zanim saksofon był obecny w składzie zespołów jazzowych na początku XX wieku, wykorzystywano go głównie w orkiestrach wojskowych natomiast w orkiestrze symfonicznej raczej sporadyczne.</string>
 </resources>

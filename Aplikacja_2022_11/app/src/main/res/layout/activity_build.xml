@@ -40,43 +40,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saksofon sopranowy"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/sopran"/>
+            android:src="@drawable/sopran"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saksofon altowy"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/alt"/>
+            android:src="@drawable/alt"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saksofon tenorowy"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/tenor"/>
+            android:src="@drawable/tenor"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saksofon barytonowy"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"/>
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:src="@drawable/baryton"
-            android:layout_marginBottom="100dp"/>
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="center_horizontal"/>
     </LinearLayout>
     </ScrollView>
 

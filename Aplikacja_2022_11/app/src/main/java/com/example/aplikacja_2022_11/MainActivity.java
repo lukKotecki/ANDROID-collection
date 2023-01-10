@@ -20,9 +20,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Intent intent;
-    private Button buttonHistory;
-    private Button buttonBuild;
-    private ListView citiesList;
+    private Button buttonHistory, buttonBuild, buttonDiaphragm;
 
 
     @Override
@@ -31,28 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         buttonHistory = findViewById(R.id.buttonHistory);
-        buttonBuild = findViewById(R.id.buttonBuild);
         buttonHistory.setOnClickListener(this);
+        buttonBuild = findViewById(R.id.buttonBuild);
         buttonBuild.setOnClickListener(this);
-
-
-//        citiesList = findViewById(R.id.citiesList);
-//
-//        ArrayList<String> cities = new ArrayList<>();
-//
-//        cities.add("Kocław");
-//        cities.add("Bocław");
-//        cities.add("Zrocław");
-//        cities.add("Wroclaw");
-//
-//        ArrayAdapter<String> citiesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, cities);
-//        citiesList.setAdapter(citiesAdapter);
-//        citiesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Toast.makeText(MainActivity.this, "Klikinięto "+cities.get(i), Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        buttonDiaphragm = findViewById(R.id.buttonDiaphragm);
+        buttonDiaphragm.setOnClickListener(this);
 
     }
 
@@ -61,15 +42,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(view.getId()){
             case R.id.buttonHistory:
                 intent = new Intent(this,HistoryActivity.class);
-                startActivity(intent);
                 break;
             case R.id.buttonBuild:
                 intent = new Intent(this,BuildActivity.class);
-                startActivity(intent);
+                break;
+            case R.id.buttonDiaphragm:
+                intent = new Intent (this, DiaphragmBreathing.class);
                 break;
             default:
                 break;
         }
+        startActivity(intent);
+
     }
 
     @Override
@@ -81,24 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        MenuPopulateClass menuPopulate = new MenuPopulateClass();
+        menuPopulate.menuPopulate(item,this);
 
-        switch(item.getItemId()){
-            case R.id.settings_menu:
-                Toast.makeText(this, "settings selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.about_menu:
-                Toast.makeText(this, "about clicked", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.home_menu:
-                intent = new Intent(this,MainActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.finish_menu:
-                finish();
-                break;
-            default:
-                break;
-        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -49,44 +49,72 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adolf Sax"
-                android:layout_margin="20dp"/>
+                android:text="wynalazca saksofonu: Adolf Sax"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"/>
+
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                android:src="@drawable/adolph_sax"/>
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/adolph_sax" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_ophicleyde_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ofiklejda"
-                android:layout_margin="20dp"/>
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/ophicleide_in_b_flat_and_c"/>
+                android:src="@drawable/ophicleide_in_b_flat_and_c"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Serpent"
-                android:layout_margin="20dp"/>
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:src="@drawable/serpent"/>
+                android:text="@string/history_patent_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Muzeum Selmera"
-                android:layout_margin="20dp"/>
+                android:text="Patent na saksofon"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:src="@drawable/patent_saksofon"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_jazz_text"
+                android:layout_gravity="center_horizontal"/>
 
             <ImageView
                 android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:src="@drawable/selmer_museum"
-                android:layout_marginBottom="100dp"/>
+                android:layout_height="250dp"
+                android:src="@drawable/military_photo"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </ScrollView>
 

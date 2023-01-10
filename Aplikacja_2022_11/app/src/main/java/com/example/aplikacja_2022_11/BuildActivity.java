@@ -31,8 +31,8 @@ public class BuildActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        // TODO: 05.12.2022
-
+        MenuPopulateClass menuPopulate = new MenuPopulateClass();
+        menuPopulate.menuPopulate(item,this);
 
         return super.onOptionsItemSelected(item);
     }
