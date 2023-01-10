@@ -8,14 +8,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class DiaphragmBreathing extends AppCompatActivity {
+public class VarietiesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diaphragm_breathing);
+        setContentView(R.layout.activity_varietes);
     }
-
 
 
 
@@ -32,4 +31,5 @@ public class DiaphragmBreathing extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

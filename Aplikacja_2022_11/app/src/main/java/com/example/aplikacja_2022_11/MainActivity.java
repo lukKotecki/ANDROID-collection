@@ -9,18 +9,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Intent intent;
-    private Button buttonHistory, buttonBuild, buttonDiaphragm;
+    private Button buttonHistory, buttonBuild, buttonVarieties, buttonDiaphragm;
 
 
     @Override
@@ -32,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonHistory.setOnClickListener(this);
         buttonBuild = findViewById(R.id.buttonBuild);
         buttonBuild.setOnClickListener(this);
+        buttonVarieties = findViewById(R.id.buttonVarieties);
+        buttonVarieties.setOnClickListener(this);
         buttonDiaphragm = findViewById(R.id.buttonDiaphragm);
         buttonDiaphragm.setOnClickListener(this);
 
@@ -46,8 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonBuild:
                 intent = new Intent(this,BuildActivity.class);
                 break;
+            case R.id.buttonVarieties:
+                intent = new Intent(this, VarietiesActivity.class);
+                break;
             case R.id.buttonDiaphragm:
-                intent = new Intent (this, DiaphragmBreathing.class);
+                intent = new Intent (this, DiaphragmBreathingActivity.class);
                 break;
             default:
                 break;

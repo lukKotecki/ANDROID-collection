@@ -10,8 +10,9 @@
     <string name="textButtonEmbouchure">Zadęcie saksofonowe</string>
     <string name="textButtonDiaphragm">Oddech przeponowo-żebrowy</string>
     <string name="diaphragm_activity_title">Oddech przeponowo-żebrowy</string>
-    <string name="diaphragm_text"><![CDATA[Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.]]></string>
+    <string name="diaphragm_text">Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.></string>
     <string name="history_ophicleyde_text">Instrument który bezpośrednio poprzedzał powstanie saksofonu to ofiklejda. Jest to instrument dęty blaszany,  mierząca około metra wysokości z ustnikiem podobnym do tego, jaki ma puzon.</string>
     <string name="history_patent_text">Adolf Sax, złożył wniosek o patent na saksofon we Francji 21 marca 1846 roku. W swoim wniosku wspomniał, że ma być to instrument o brzmieniu podobnym do instrumentów smyczkowych, ale o większej sile i intensywności dźwięku. Patent zawierał rysunki ośmiu różnych saksofonów z których można wyróżnić trzy główne modele w kształcie ofiklejdy, zagiętym -znanym obecnie oraz w formie wyprostowanej. Ustnik saksofonu miał pojedynczy stroik i  przypominał ustnik klarnetowy.</string>
     <string name="history_jazz_text">Zanim saksofon był obecny w składzie zespołów jazzowych na początku XX wieku, wykorzystywano go głównie w orkiestrach wojskowych natomiast w orkiestrze symfonicznej raczej sporadyczne.</string>
+    <string name="textButtonVarieties">Odmiany saksofonu</string>
 </resources>

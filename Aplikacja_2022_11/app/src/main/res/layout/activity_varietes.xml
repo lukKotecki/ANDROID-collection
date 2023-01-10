@@ -4,36 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DiaphragmBreathingActivity">
-
-
-
+    tools:context=".VarietiesActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/diaphragm_activity_title"
+        android:text="@string/build_activity_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="20dp"
-        android:layout_marginBottom="30dp"
-        android:textSize="28sp"
-        android:id="@+id/diaphragm_tiile"/>
+        android:textSize="30sp"
+        android:id="@+id/build_tiile"/>
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diaphragm_tiile">
+        app:layout_constraintTop_toBottomOf="@+id/build_tiile">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,62 +31,60 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/diaphragm_text"
+                android:text="@string/saxophone_build_text"
                 android:layout_margin="20dp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="umiejscowienie przepony"
-                android:layout_margin="20dp"
-                android:layout_gravity="center_horizontal"/>
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:src="@drawable/przepona_jpg"
-                android:layout_gravity="center_horizontal"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ofiklejda"
+                android:text="Saksofon sopranowy"
                 android:layout_margin="20dp"
                 android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/ophicleide_in_b_flat_and_c"
+                android:src="@drawable/sopran"
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Serpent"
+                android:text="Saksofon altowy"
                 android:layout_margin="20dp"
                 android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/serpent"
+                android:src="@drawable/alt"
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Muzeum Selmera"
+                android:text="Saksofon tenorowy"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/tenor"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saksofon barytonowy"
                 android:layout_margin="20dp"
                 android:layout_gravity="center_horizontal"/>
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/selmer_museum"
+                android:src="@drawable/baryton"
                 android:layout_marginBottom="100dp"
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

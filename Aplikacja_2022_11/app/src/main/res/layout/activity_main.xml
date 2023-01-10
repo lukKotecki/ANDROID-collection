@@ -44,10 +44,19 @@
         android:text="@string/textButtonBuild"/>
 
     <Button
-        android:id="@+id/buttonDiaphragm"
+        android:id="@+id/buttonVarieties"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonBuild"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/textButtonVarieties"/>
+
+    <Button
+        android:id="@+id/buttonDiaphragm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVarieties"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="@string/textButtonDiaphragm"/>
