@@ -29,8 +29,12 @@
     <string name="varieties_saxophone_text">Najbardziej popularne są cztery odmiany saksofonu w kolejności od najmniejszego do największego są to kolejno: sopranowy, altowy, tenorowy, barytonowy. Oprócz tych odmian możnaby wyróżnić jescze kilkanaście innych.</string>
     <string name="varities_sopranissimo_text">Saksofon sopranissimowy często nazywany również soprillo lub piccolo. Najmniejszy z rodziny saksofonów jest w stroju B. Saksofon wygląda jak zabawka i jest tak mały, że otwór oktawowy znajduje się w ustniku.</string><string name="varieties_sopranino_text">Saksofon sopraninowy w stroju Es drugi najmniejszy saksofon z rodziny. Pierwotnie umieszczony w patencie Adlfa Saxa jednak nigdy nie ukończył on jego budowy. Z uwagi na niewielkie rozmiary zazwyczaj posiada budowę prostą i jest produkowany przez najbradziej znane firmy.</string>
     <string name="varieties_soprano_text">Saksofon sopranowy w stroju B spotykany często o prostej budowie z krótką demontowalną fajką.</string>
-
-
+    <string name="varieties_alto_text">Saksofon altowy w stoju Es jest najpopularniejszą odmianą saksofonu. Łatwość zadęcia oraz stosunkowo niewielkie rozmiary sprzyjają w nauce na tym instrumencie.</string>
+    <string name="varieties_tenor_text">Saksofon tenorowy w stroju B , druga najpopularniejsza odmiana saksofonu. Jego ciemne i bogate brzmienie sprawia, że często wykorzystywany jest w muzyce jazzowej oraz rozrywkowej. Jest większy od saksofonu altowego a najłatwiej odróżnić go przez wygiętą ku dołowi fajce.</string>
+    <string name="varieties_baritone_text">Saksofon barytonowy w stroju Es poprzez wydłużony roztrąb jako jedyny posiada dolny dźwięk A. Obowiązkowy instrument w kwartecie saksofonowym, big-bandzie czy orkiestrze dętej.</string>
+    <string name="varieties_bass_text">Saksofon basowy w stroju B prawdopodobnie pierwszy saksofon skonstruowany przez Adlofa Saxa. Obecnie rzadko spotykany i jedynie nieliczne firmy produkują tę odmianę.</string>
+    <string name="varieties_contrabass_text">Saksofon kontrabasowy w stroju Es jest jednym z największych odmian saksofonu . Mierzy 190cm wysokośći oraz waży około 20kg. Obecnie jedynie trzy firmy produkują tą odmianę.</string>
+    <string name="varieties_subcontrabass_text">Saksofon subkontrabasowy w stroju B to największa odmiana saksofonu jaką Adolf Sax opatentował w 1846 roku niestety nigdy nie ukończył jego budowy. Prototyp powstał dopiero w 1960 a w pełni działający model zaprezentowany dopiero w 2010 roku. Zmodyfikowana wersja saksofonu subkontrabasowego to Tubax.</string>
 
 
 

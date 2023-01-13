@@ -113,8 +113,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/varieties_alto_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Saksofon altowy"
-                android:layout_margin="20dp"
+                android:layout_margin="2dp"
                 android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
@@ -122,11 +131,21 @@
                 android:src="@drawable/alt"
                 android:layout_gravity="center_horizontal"/>
 
+<!--TENOR-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_tenor_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saksofon tenorowy"
-                android:layout_margin="20dp"
+                android:layout_margin="2dp"
                 android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
@@ -134,19 +153,98 @@
                 android:src="@drawable/tenor"
                 android:layout_gravity="center_horizontal"/>
 
+<!--BARYTON-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_baritone_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saksofon barytonowy"
-                android:layout_margin="20dp"
+                android:layout_margin="2dp"
                 android:layout_gravity="center_horizontal"/>
-
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:src="@drawable/baryton"
-                android:layout_marginBottom="100dp"
                 android:layout_gravity="center_horizontal"/>
+
+<!--BASS-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_bass_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saksofon basowy"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/bass"
+                android:layout_gravity="center_horizontal"/>
+
+<!--CONTRABASS-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_contrabass_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saksofon kontrabasowy"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/contrabass"
+                android:layout_gravity="center_horizontal"/>
+
+<!--SUBCONTRABASS-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_subcontrabass_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saksofon subkontrabasowy"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/subcontrabass"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="100dp"/>
+
+
+
+
         </LinearLayout>
     </ScrollView>
 
