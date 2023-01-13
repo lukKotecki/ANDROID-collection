@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:text="@string/textSaxophoneBanner"
+        android:text="@string/main_banner_title"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -32,7 +32,7 @@
         android:layout_below="@id/textViewBanner"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/textButtonHistory"/>
+        android:text="@string/main_button_history"/>
 
     <Button
         android:id="@+id/buttonBuild"
@@ -41,7 +41,7 @@
         android:layout_below="@id/buttonHistory"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/textButtonBuild"/>
+        android:text="@string/main_button_build"/>
 
     <Button
         android:id="@+id/buttonVarieties"
@@ -50,7 +50,7 @@
         android:layout_below="@id/buttonBuild"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/textButtonVarieties"/>
+        android:text="@string/main_button_varieties"/>
 
     <Button
         android:id="@+id/buttonDiaphragm"
@@ -59,7 +59,7 @@
         android:layout_below="@id/buttonVarieties"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/textButtonDiaphragm"/>
+        android:text="@string/main_button_diaphragm"/>
 
     <Button
         android:id="@+id/buttonEmbouchure"
@@ -68,7 +68,7 @@
         android:layout_below="@id/buttonDiaphragm"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/textButtonEmbouchure"/>
+        android:text="@string/main_button_embouchure"/>
 
 
 

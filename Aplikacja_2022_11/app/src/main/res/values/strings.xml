@@ -1,18 +1,42 @@
 <resources>
-    <string name="app_name">Aplikacja_2022_11</string>
-    <string name="textButtonHistory">Historia saksofonu</string>
-    <string name="textButtonBuild">Budowa saksofonu</string>
-    <string name="textSaxophoneBanner">Saksofon od A do Z</string>
-    <string name="build_activity_title">Budowa saksofonu</string>
-    <string name="saxophone_build_text">Saksofon składa się z metalowej rury w kształcie fajki (w przypadku saksofonu sopranowego - prostej), wyposażony jest w klapy i pojedynczy stroik, jak w klarnecie. Obecnie buduje się saksofony w 7 wielkościach: kontrabasowy, basowy, barytonowy, tenorowy, altowy i dwa sopranowe.</string>
+    <string name="app_name">Saksofon od A do Z ver 0.1</string>
+
+    <string name="main_banner_title">Saksofon od A do Z</string>
+    <string name="main_button_history">Historia saksofonu</string>
+    <string name="main_button_build">Budowa saksofonu</string>
+    <string name="main_button_varieties">Odmiany saksofonu</string>
+    <string name="main_button_embouchure">Zadęcie saksofonowe</string>
+    <string name="main_button_diaphragm">Oddech przeponowo-żebrowy</string>
+
+
     <string name="history_activity_title">Historia saksofonu</string>
     <string name="history_saxophone_text">Saksofon należy do grupy instrumentów dętych drewnianych, został on skonstruowany przez Adolpha Saxa  prawdopodobnie w 1842 roku i nazwany jest na cześć swojego konstruktora. Pierwszy publiczny koncert z użyciem saksofonu odbył się w lutym 1844 roku pod kierownictwem francuskiego kompozytora Louisa Hector Berlioza.</string>
-    <string name="textButtonEmbouchure">Zadęcie saksofonowe</string>
-    <string name="textButtonDiaphragm">Oddech przeponowo-żebrowy</string>
-    <string name="diaphragm_activity_title">Oddech przeponowo-żebrowy</string>
-    <string name="diaphragm_text">Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.></string>
     <string name="history_ophicleyde_text">Instrument który bezpośrednio poprzedzał powstanie saksofonu to ofiklejda. Jest to instrument dęty blaszany,  mierząca około metra wysokości z ustnikiem podobnym do tego, jaki ma puzon.</string>
     <string name="history_patent_text">Adolf Sax, złożył wniosek o patent na saksofon we Francji 21 marca 1846 roku. W swoim wniosku wspomniał, że ma być to instrument o brzmieniu podobnym do instrumentów smyczkowych, ale o większej sile i intensywności dźwięku. Patent zawierał rysunki ośmiu różnych saksofonów z których można wyróżnić trzy główne modele w kształcie ofiklejdy, zagiętym -znanym obecnie oraz w formie wyprostowanej. Ustnik saksofonu miał pojedynczy stroik i  przypominał ustnik klarnetowy.</string>
     <string name="history_jazz_text">Zanim saksofon był obecny w składzie zespołów jazzowych na początku XX wieku, wykorzystywano go głównie w orkiestrach wojskowych natomiast w orkiestrze symfonicznej raczej sporadyczne.</string>
-    <string name="textButtonVarieties">Odmiany saksofonu</string>
+
+
+
+    <string name="build_activity_title">Budowa saksofonu</string>
+    <string name="build_saxophone_text">Saksofon składa się z metalowej rury o wygiętym kształcie (w przypadku saksofonu sopranowego - prostej), wyposażony jest w klapy i pojedynczy stroik, jak w klarnecie. </string>
+    <string name="build_reed_text">Najważniejszą częścią saksofonu a zarazem najbardziej delikatną, oraz mającą największy wpływ na dźwięk to stroik saksofonu. To właśnie przez wykonany z trzciny stroik, saksofon zaliczany jest do instrumentów dętych drewnianych.</string>
+    <string name="build_mouthpiece_text">Kolejnym elementrm mającym bardzo duży wpływ na barwę dźwięku saksofonu to ustnik. Zazwyczaj wykonany jest on z ebonitu czyli mieszanki gumy i plastiku. Ustnik nakładany jest na korek znajdujący się na fajce instrumentu, natomiast do ustnika mocuje się stroik za pomocą ligatury.></string>
+    <string name="build_ligature_text">Ligatura saksofonu utrzymuje stroik w prawidłowej pozycji na ustniku podczas gry. Wykonana jest zazwyczaj z metalu, jednak popularne są również ze skóry, plastiku czy sznurka.</string>
+
+
+
+    <string name="varieties_activity_title">Odmiany saksofonów</string>
+    <string name="varieties_saxophone_text">Najbardziej popularne są cztery odmiany saksofonu w kolejności od najmniejszego do największego są to kolejno: sopranowy, altowy, tenorowy, barytonowy. Oprócz tych odmian możnaby wyróżnić jescze kilkanaście innych.</string>
+    <string name="varities_sopranissimo_text">Saksofon sopranissimowy często nazywany również soprillo lub piccolo. Najmniejszy z rodziny saksofonów jest w stroju B. Saksofon wygląda jak zabawka i jest tak mały, że otwór oktawowy znajduje się w ustniku.</string><string name="varieties_sopranino_text">Saksofon sopraninowy w stroju Es drugi najmniejszy saksofon z rodziny. Pierwotnie umieszczony w patencie Adlfa Saxa jednak nigdy nie ukończył on jego budowy. Z uwagi na niewielkie rozmiary zazwyczaj posiada budowę prostą i jest produkowany przez najbradziej znane firmy.</string>
+    <string name="varieties_soprano_text">Saksofon sopranowy w stroju B spotykany często o prostej budowie z krótką demontowalną fajką.</string>
+
+
+
+
+
+    <string name="diaphragm_activity_title">Oddech przeponowo-żebrowy</string>
+    <string name="diaphragm_text">Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.</string>
+
+
+
 </resources>

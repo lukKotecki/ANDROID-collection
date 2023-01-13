@@ -32,14 +32,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/saxophone_build_text"
+            android:text="@string/build_saxophone_text"
             android:layout_margin="20dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saksofon sopranowy"
+            android:text="poszczególne części saksofonu"
             android:layout_margin="20dp"
             android:layout_gravity="center_horizontal"/>
         <ImageView
@@ -51,38 +51,61 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saksofon altowy"
+            android:text="@string/build_reed_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stroik do saksofnu altowego"
             android:layout_margin="20dp"
             android:layout_gravity="center_horizontal"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/alt"
+            android:src="@drawable/stroik"
             android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saksofon tenorowy"
+            android:text="@string/build_mouthpiece_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ustnik saksofonu"
             android:layout_margin="20dp"
             android:layout_gravity="center_horizontal"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/tenor"
+            android:src="@drawable/ustnik"
             android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saksofon barytonowy"
+            android:text="@string/build_ligature_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ligatura"
             android:layout_margin="20dp"
             android:layout_gravity="center_horizontal"/>
-
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/baryton"
+            android:src="@drawable/ligatura"
             android:layout_marginBottom="100dp"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>

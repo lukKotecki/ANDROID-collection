@@ -8,38 +8,100 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/build_activity_title"
+        android:text="@string/varieties_activity_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="20dp"
         android:textSize="30sp"
-        android:id="@+id/build_tiile"/>
+        android:id="@+id/varieties_tiile"/>
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/build_tiile">
+        app:layout_constraintTop_toBottomOf="@+id/varieties_tiile">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/saxophone_build_text"
-                android:layout_margin="20dp"
+                android:text="@string/varieties_saxophone_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
                 />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="230dp"
+                android:src="@drawable/odmiany_saksofonu"
+                android:layout_gravity="center_horizontal"/>
 
+
+<!--SOPRANISSIMO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varities_sopranissimo_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sopranissimo"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/soprillo_piccolo_sopranissimo"
+                android:layout_gravity="center_horizontal"/>
+
+<!--SOPRANINO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_sopranino_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sopranino"
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/sopranino"
+                android:layout_gravity="center_horizontal"/>
+
+<!--SOPRANO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/varieties_soprano_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saksofon sopranowy"
-                android:layout_margin="20dp"
+                android:layout_margin="2dp"
                 android:layout_gravity="center_horizontal"/>
             <ImageView
                 android:layout_width="300dp"
@@ -47,6 +109,7 @@
                 android:src="@drawable/sopran"
                 android:layout_gravity="center_horizontal"/>
 
+<!--ALTO-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
