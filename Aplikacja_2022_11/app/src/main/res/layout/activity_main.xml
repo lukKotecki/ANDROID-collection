@@ -53,22 +53,22 @@
         android:text="@string/main_button_varieties"/>
 
     <Button
-        android:id="@+id/buttonDiaphragm"
+        android:id="@+id/buttonEmbouchure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonVarieties"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/main_button_diaphragm"/>
+        android:text="@string/main_button_embouchure"/>
 
     <Button
-        android:id="@+id/buttonEmbouchure"
+        android:id="@+id/buttonEmpty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonDiaphragm"
+        android:layout_below="@id/buttonEmbouchure"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/main_button_embouchure"/>
+        android:text="TEN KLAWISZ JEST WOLNY"/>
 
 
 

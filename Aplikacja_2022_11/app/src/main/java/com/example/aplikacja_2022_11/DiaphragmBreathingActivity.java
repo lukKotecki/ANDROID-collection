@@ -13,7 +13,7 @@ public class DiaphragmBreathingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diaphragm_breathing);
+        setContentView(R.layout.activity_embouchure);
     }
 
 

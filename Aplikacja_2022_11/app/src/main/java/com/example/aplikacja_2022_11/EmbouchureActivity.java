@@ -13,7 +13,7 @@ public class EmbouchureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_embouchure);
+        setContentView(R.layout.activity_empty);
     }
 
 

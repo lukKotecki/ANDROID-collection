@@ -14,7 +14,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Intent intent;
-    private Button buttonHistory, buttonBuild, buttonVarieties, buttonDiaphragm;
+    private Button buttonHistory, buttonBuild, buttonVarieties, buttonEmpty;
 
 
     @Override
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonBuild.setOnClickListener(this);
         buttonVarieties = findViewById(R.id.buttonVarieties);
         buttonVarieties.setOnClickListener(this);
-        buttonDiaphragm = findViewById(R.id.buttonDiaphragm);
-        buttonDiaphragm.setOnClickListener(this);
+        buttonEmpty = findViewById(R.id.buttonEmbouchure);
+        buttonEmpty.setOnClickListener(this);
 
     }
 
@@ -45,7 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonVarieties:
                 intent = new Intent(this, VarietiesActivity.class);
                 break;
-            case R.id.buttonDiaphragm:
+            case R.id.buttonEmbouchure:
+                intent = new Intent (this, DiaphragmBreathingActivity.class);
+                break;
+            case R.id.buttonEmpty:
                 intent = new Intent (this, DiaphragmBreathingActivity.class);
                 break;
             default:

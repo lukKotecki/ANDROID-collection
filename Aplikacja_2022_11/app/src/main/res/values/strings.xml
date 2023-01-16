@@ -38,8 +38,9 @@
 
 
 
-    <string name="diaphragm_activity_title">Oddech przeponowo-żebrowy</string>
-    <string name="diaphragm_text">Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.</string>
+    <string name="embouchure_activity_title">Zadęcie saksofonowe</string>
+    <string name="embouchure_text">Zdęcie saksofonowe można podzielić na dwie kwestie. Pierwsza wspólna dla wszystkich instrumentów dętych dotycząca brania prawidłowego oddechu przeponowo-żebrowego, oraz druga uwzględniająca cały układu ust i okolic.</string>
+    <string name="embouchure_diaphragm_text">Oddech przeeponowo-żebrowy inaczej zwany oddechem głębokim. Polega na wzięciu oddechu zdo dolnej częsci płuc tj do brzucha. Napięcie mięśni przepony pozwala pogłębić oddech i nadać mu odpowiednie ciśnienie.</string>
 
 
 
