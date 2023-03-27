@@ -1,8 +1,5 @@
 package com.example.app_2023_01_chat_app.activities;
 
-import com.example.app_2023_01_chat_app.R;
-
-import androidx.appcompat.app.AppCompatActivity;
 import com.example.app_2023_01_chat_app.adapters.UsersAdapter;
 import com.example.app_2023_01_chat_app.databinding.ActivityUsersBinding;
 import com.example.app_2023_01_chat_app.listeners.UserListener;
@@ -19,7 +16,7 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsersActivity extends AppCompatActivity implements UserListener {
+public class UsersActivity extends BaseActivity implements UserListener {
 
     private ActivityUsersBinding binding;
     private PreferenceManager preferenceManager;

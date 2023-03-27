@@ -1,7 +1,5 @@
 package com.example.app_2023_01_chat_app.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,7 +8,6 @@ import android.util.Base64;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.app_2023_01_chat_app.R;
 import com.example.app_2023_01_chat_app.adapters.RecentConversationAdapter;
 import com.example.app_2023_01_chat_app.databinding.ActivityMainBinding;
 import com.example.app_2023_01_chat_app.listeners.ConversionListener;
@@ -31,7 +28,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements ConversionListener {
+public class MainActivity extends BaseActivity implements ConversionListener {
 
     private ActivityMainBinding binding;
     private PreferenceManager preferenceManager;
