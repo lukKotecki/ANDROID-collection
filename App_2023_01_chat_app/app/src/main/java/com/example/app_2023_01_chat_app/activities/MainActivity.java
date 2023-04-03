@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
     private ActivityMainBinding binding;
     private PreferenceManager preferenceManager;
     private List<ChatMessage> conversations;
-    private RecentConversationAdapter conversationAdapter;
+    private RecentConversationAdapter conversationsAdapter;
     private FirebaseFirestore database;
 
     @Override
@@ -51,8 +51,8 @@ public class MainActivity extends BaseActivity implements ConversionListener {
 
     private void init(){
         conversations = new ArrayList<>();
-        conversationAdapter = new RecentConversationAdapter(conversations, this);
-        binding.conversationsRecyclerView.setAdapter(conversationAdapter);
+        conversationsAdapter = new RecentConversationAdapter(conversations, this);
+        binding.conversationsRecyclerView.setAdapter(conversationsAdapter);
         database = FirebaseFirestore.getInstance();
     }
 
@@ -101,7 +101,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                     }else{
                         chatMessage.conversionImage = documentChange.getDocument().getString(Constants.KEY_SENDER_IMAGE);
                         chatMessage.conversionName = documentChange.getDocument().getString(Constants.KEY_SENDER_NAME);
-                        chatMessage.conversionName = documentChange.getDocument().getString(Constants.KEY_SENDER_ID);
+                        chatMessage.conversionId = documentChange.getDocument().getString(Constants.KEY_SENDER_ID);
                     }
                     chatMessage.message = documentChange.getDocument().getString(Constants.KEY_LAST_MESSAGE);
                     chatMessage.dateObject = documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP);
@@ -119,7 +119,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                 }
             }
             Collections.sort(conversations, (obj1, obj2) -> obj2.dateObject.compareTo(obj1.dateObject));
-            conversationAdapter.notifyDataSetChanged();
+            conversationsAdapter.notifyDataSetChanged();
             binding.conversationsRecyclerView.smoothScrollToPosition(0);
             binding.conversationsRecyclerView.setVisibility(View.VISIBLE);
             binding.progressBar.setVisibility(View.GONE);
@@ -131,6 +131,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
     }
 
     private void updateToken(String token){
+        preferenceManager.putString(Constants.KEY_FCM_TOKEN, token);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(Constants.KEY_COLLECTION_USERS).document(
